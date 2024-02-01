@@ -1,0 +1,108 @@
+:root{
+  --first-color:black;
+  --second-color:white;
+  --third-color:#0084fd;
+  --fourth-color:#b5ddff;
+  --fifth-color:#5a6e7f;
+  --sixth-color:#9792e4;
+  --seventh-color:#fdc15f;
+  --eighth-color:#333333;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"PT Sans", sans-serif ;
+}
+
+/* UTILITY */
+
+.debug{
+  border: 1px solid red;
+}
+
+.d_flex{
+  display: flex;
+}
+
+.container{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.padd_row{
+  padding: 50px 30px;
+}
+
+.mb_xs{
+  margin-bottom: 25px;
+}
+
+/* HEADER  */
+header{
+  background-color: var(--third-color);
+  height: 80px;
+  color: white;
+}
+
+header .container{
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  font-size: 1.5rem;
+}
+
+header .container .logo{
+  font-size: 2rem;
+}
+
+.container .nav_desktop{
+  display:none ;
+}
+
+.container .nav_desktop li{
+  list-style: none;
+}
+
+.container .nav_desktop li a{
+  text-decoration: none;
+  color: var(--second-color);
+  padding: 10px 14px;
+  margin: 20px;
+}
+
+/* MAIN  */
+
+main .demo_downl .row{
+  width: 100%;
+  flex-direction: column;
+}
+
+/* TODO: eliminare altezze fisse */
+main .demo_downl .row .col{
+  height: 100px;
+}
+
+main .demo_downl .row .card{
+  background-color: var(--fourth-color);
+  border-radius: 10%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+/* *********************************** 
+MEDIA QUERY 
+***********************************  */
