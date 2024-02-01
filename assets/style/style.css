@@ -34,12 +34,41 @@ body{
   margin: 0 auto;
 }
 
+/* distanze */
+
+.pb_xs{
+  padding-bottom: 25px;
+}
+
+.pb_s{
+  padding-bottom: 35px;
+}
+
+.pb_m{
+  padding-bottom: 60px;
+}
+
+.pb_l{
+  padding-bottom: 80px;
+}
+
+.pt_xs{
+  padding-top: 30px;
+}
+
+.pt_s{
+  padding-top: 35px;
+}
+
+.pt_m{
+  padding-top: 60px;
+}
+
 .padd_row{
   padding: 50px 30px;
 }
-
-.mb_xs{
-  margin-bottom: 25px;
+.padd_card{
+  padding: 0 30px;
 }
 
 /* HEADER  */
@@ -78,14 +107,16 @@ header .container .logo{
 
 /* MAIN  */
 
+/* Demo_downl  */
 main .demo_downl .row{
   width: 100%;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* TODO: eliminare altezze fisse */
 main .demo_downl .row .col{
-  height: 100px;
+  /* height: 100px; */
 }
 
 main .demo_downl .row .card{
@@ -94,8 +125,16 @@ main .demo_downl .row .card{
   height: 100%;
 }
 
+/* Strategic_planning */
+main .strategic_planning{
+  background-color: var(--sixth-color);
+}
 
-
+main .strategic_planning .row .card_white{
+  background-color: var(--second-color);
+  color: black;
+  border-radius: 10%;
+}
 
 
 
