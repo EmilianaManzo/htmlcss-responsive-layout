@@ -13,11 +13,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
   font-family:"PT Sans", sans-serif ;
-  
 }
 
 /* UTILITY */
@@ -110,6 +110,56 @@ main .get_started{
   margin-bottom: 50px;
 }
 
+/* bottoni */
+.btn{
+  background-color: white;
+  color: var(--first-color);
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.btn_blue{
+  background-color: var(--third-color);
+  color: var(--second-color);
+}
+
+.btn_lilac{
+  background-color:var(--sixth-color);
+}
+
+.btn_large{
+  padding: 14px 40px;
+}
+
+.btn_thin{
+  padding: 10px 15px;
+}
+
+.btn_big{
+  color: var(--sixth-color);
+  padding: 30px 80px;
+}
+
+.btn_circle{
+  padding:15px 20px;
+  border-radius: 50%;
+}
+
+.btn_contrast{
+  color: var(--second-color);
+}
+
+
+.btn i{
+  margin-right: 10px;
+}
+
 /* HEADER  */
 header{
   color: white;
@@ -135,19 +185,49 @@ header .container .logo{
   font-size: 2rem;
 }
 
-.container .nav_desktop{
+.container .nav_hamb i:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+
+  .container .nav_desktop{
   display:none ;
+  height: 100%;
+}
+
+.container .nav_desktop ul{
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .container .nav_desktop li{
   list-style: none;
+  height: 100%;
+  line-height: 80px;
+  
 }
 
 .container .nav_desktop li a{
-  text-decoration: none;
   color: var(--second-color);
+  text-decoration: none;
+  font-size: 1rem;
   padding: 10px 14px;
-  margin: 20px;
+  margin: 10px;
+}
+
+.container .nav_desktop li a.btn{
+  color: black;
+}
+
+.container .nav_desktop li:hover{
+  opacity: 0.7;
+  cursor: pointer;
+  border-bottom: 2px solid var(--seventh-color);
+}
+
+.nav_desktop li:last-child:hover{
+  border-bottom: none;
 }
 
 /* MAIN  */
@@ -190,6 +270,10 @@ main .get_started .container{
   justify-content: space-evenly;
 }
 
+main .get_started p:last-child a{
+  color: var(--second-color);
+}
+
 /* FOOTER */
 footer{
   background-color: var(--eighth-color);
@@ -207,6 +291,10 @@ footer .container{
 footer .container .upper,
 footer .container .bottom{
   text-align: center;
+}
+
+footer a{
+  color: #7875ae;
 }
 
 /* *********************************** 
@@ -248,6 +336,17 @@ MEDIA QUERY
   .container{
     max-width: 1200px;
     width: 80%;
+  }
+  header .container{
+    padding: 0;
+  }
+
+  header .nav_hamb{
+    display: none;
+  }
+
+  header .container .nav_desktop{
+    display: block;
   }
 
   main .strategic_planning .row{

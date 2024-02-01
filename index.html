@@ -17,32 +17,36 @@
   <title>Responsive Layout</title>
 </head>
 <body>
-  
+  <!-- HEADER  -->
   <header class="debug">
     <div class="container d_flex">
       <div class="logo debug">logo</div>
-
+      
       <div class="nav_hamb">
         <i class="fa-solid fa-bars"></i>
       </div>
-
+      
       <nav class="nav_desktop">
         <ul class="d_flex debug">
-          <li><a href="#">Planning</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Get Started</a></li>
+          <li><a href="#planning" target="_self">Planning</a></li>
+          <li><a href="#testimonial" target="_self">Testimonials</a></li>
+          <li><a href="#benefit" target="_self">Features</a></li>
+          <li><a href="#about_us" target="_self">About Us</a></li>
+          <li><a href="#" class="btn">Get Started</a></li>
         </ul>
       </nav>
-
+      
     </div>
   </header>
+  <!-- /HEADER  -->
   
+  <!-- MAIN  -->
+
   <main>
 
 
     <!-- TODO:dare dimensioni in percentuali alle col in base alla risoluzione -->
+    <!-- Demo download -->
     <section class="demo_downl debug">
       <div class="container">
 
@@ -52,7 +56,9 @@
             <div class="card debug">
               <h3 class="pb_s debug">Titolo</h3>
               <p class="pb_s debug">lorem</p>
-              <p><a href="#" class="btn pb_s debug">btn</a></p>
+              <p><a href="#" class="btn btn_blue btn_large btn pb_s debug">
+                <i class="fa-brands fa-apple"></i> App Store
+              </a></p>
               <div class="img debug">
                 <img src="" alt="">
               </div>
@@ -102,10 +108,12 @@
         </div>
       </div>
     </section>
+    <!-- /Demo download -->
 
 
     <!-- TODO:dare dimensioni in percentuali alle col in base alla risoluzione -->
-    <section class="strategic_planning debug">
+    <!-- Planning  -->
+    <section class="strategic_planning debug" id="planning">
 
       <div class="container debug">
 
@@ -128,18 +136,19 @@
               </div>
               <h3 class="pb_s debug">Titolo</h3>
               <p class="pb_s debug">lorem</p>
-              <a href="#" class="btn debug">btn</a>
+              <a href="#" class="btn btn_lilac btn_circle debug"><i class="fa-solid fa-arrow-down-long"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /Planning  -->
 
-
-    <section class="testimonial debug">
+    <!-- Testimonial  -->
+    <section class="testimonial debug" id="testimonial">
       <div class="container debug">
         <div class="row padd_row debug">
-
+          
           <div class="col col_standard padd_col debug">
             <div class="card">
               <p class="pb_s debug">TESTIMONIALS</p>
@@ -147,7 +156,7 @@
               <p class="debug">lorem lorem lorem</p>
             </div>
           </div>
-
+          
           <div class="col col_standard padd_col debug">
             <div class="card card_lilac debug">
               <div class="img pb_xs debug">
@@ -161,7 +170,7 @@
               <p class="debug">NAME</p>
             </div>
           </div>
-
+          
           <div class="col col_standard padd_col debug">
             <div class="card card_lilac ">
               <div class="img pb_xs debug">
@@ -175,7 +184,7 @@
               <p class="debug">NAME</p>
             </div>
           </div>
-
+          
           <div class="col col_standard padd_col debug">
             <div class="card card_lilac ">
               <div class="img pb_xs debug">
@@ -189,20 +198,21 @@
               <p class="debug">NAME</p>
             </div>
           </div>
-
-
+          
+          
         </div>
       </div>
     </section>
+    <!-- /Testimonial  -->
 
-
-    <section class="benefit debug">
+    <!-- Benefit  -->
+    <section class="benefit debug" id="benefit">
       <div class="container padd_cont">
         <h2>Titolo</h2>
       </div>
-
+      
       <div class="container debug">
-
+        
         <div class="row d_flex padd_row">
 
           <div class="col col_standard padd_col debug">
@@ -210,7 +220,7 @@
               <h2 class="pb_s debug">01</h2>
               <h3 class="pb_xs debug">titolo</h3>
               <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
             </div>
           </div>
 
@@ -219,7 +229,7 @@
               <h2 class="pb_s debug">02</h2>
               <h3 class="pb_xs debug">titolo</h3>
               <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
             </div>
           </div>
 
@@ -228,7 +238,7 @@
               <h2 class="pb_s debug">03</h2>
               <h3 class="pb_xs debug">titolo</h3>
               <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
             </div>
           </div>
 
@@ -237,16 +247,7 @@
               <h2 class="pb_s debug">04</h2>
               <h3 class="pb_xs debug">titolo</h3>
               <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
-            </div>
-          </div>
-
-          <div class="col col_standard padd_col debug">
-            <div class="card card_white">
-              <h2 class="pb_s debug">05</h2>
-              <h3 class="pb_xs debug">titolo</h3>
-              <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
             </div>
           </div>
 
@@ -255,21 +256,30 @@
               <h2 class="pb_s debug">06</h2>
               <h3 class="pb_xs debug">titolo</h3>
               <p class="pb_xs debug">lorem lorem lorem</p>
-              <p class="pb_xs debug"><a href="#" class="btn debug">btn</a></p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
             </div>
           </div>
 
+          <div class="col col_standard padd_col debug">
+            <div class="card card_white">
+              <h2 class="pb_s debug">06</h2>
+              <h3 class="pb_xs debug">titolo</h3>
+              <p class="pb_xs debug">lorem lorem lorem</p>
+              <p class="pb_xs debug"><a href="#" class="btn btn_large btn_lilac btn_contrast debug">more</a></p>
+            </div>
+          </div>
 
         </div>
 
       </div>
 
     </section>
+    <!-- /Benefit  -->
 
-
-    <section class="about_us debug">
+    <!-- About us -->
+    <section class="about_us debug" id="about_us">
       <div class="container debug">
-
+        
         <div class="row d_flex padd_row debug">
 
           <div class="col col_big padd_col debug">
@@ -287,7 +297,7 @@
               <span><i class="fa-solid fa-quote-left"></i></span>
             </div>
             <h3 class="pb_s debug">quote quote quote quote </h3>
-            <p><a href="#" class="btn mb_m debug">
+            <p><a href="#" class="btn btn_thin btn_lilac btn_contrast btn mb_m debug">
               <i class="fa-brands fa-linkedin"></i>Find me on linkedin</a>
             </p>
           </div>
@@ -296,8 +306,10 @@
 
       </div>
     </section>
+    <!-- /About us -->
 
 
+    <!-- Get started  -->
     <section class="get_started debug">
       <div class="container d_flex">
         <p class="debug">GET STARTED</p>
@@ -308,19 +320,24 @@
         <p class="debug">Copyright 2021 Boolean ● Classe XX ● <a href="">Privacy policy</a></p>
       </div>
     </section>
-  </main>
+    <!-- /Get started  -->
 
-  <footer class="debug">
-    <div class="container d_flex">
-      <div class="upper">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Commodi maiores minima vitae vero nulla pariatur impedit!
+  </main>
+    <!-- /MAIN  -->
+
+    <!-- FOOTER  -->
+    <footer class="debug">
+      <div class="container d_flex">
+        <div class="upper">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Commodi maiores minima vitae vero nulla pariatur impedit!
+        </div>
+        <div class="bottom">
+          <a href="">Lorem ipsum</a> scelerique mauris pellentesque <a href="">Boolean careers</a>
+        </div>
       </div>
-      <div class="bottom">
-        <a href="">Lorem ipsum</a> scelerique mauris pellentesque <a href="">Boolean careers</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- /FOOTER  -->
 
 </body>
 </html>
