@@ -28,12 +28,13 @@ body{
 
 .d_flex{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .container{
   width: 98%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .row{
@@ -98,7 +99,11 @@ main .get_started{
 }
 
 .padd_row{
-  padding: 50px 30px;
+  padding: 50px 0;
+}
+
+.padd_col{
+  padding: 0 30px 15px;
 }
 
 .mb_m{
@@ -107,13 +112,19 @@ main .get_started{
 
 /* HEADER  */
 header{
-  background-color: var(--third-color);
-  height: 80px;
   color: white;
+  background-color: var(--third-color);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 header .container{
   height: 100%;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
@@ -142,10 +153,11 @@ header .container .logo{
 /* MAIN  */
 
 /* Demo_downl  */
+main .demo_downl{
+  margin-top: 80px;
+}
 main .demo_downl .row{
   width: 100%;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 /* TODO: eliminare altezze fisse */
@@ -200,3 +212,34 @@ footer .container .bottom{
 /* *********************************** 
 MEDIA QUERY 
 ***********************************  */
+/* Risoluzione tablet */
+
+@media screen and (min-width:768px) {
+  main .demo_downl .row,
+  main .benefit .row,
+  main .about_us .row{
+    flex-direction: row;
+    
+  }
+
+
+  main .demo_downl .row .col_big,
+  main .about_us .row .col_big{
+    width:66.66%;
+  }
+
+  main .demo_downl .row .col_small,
+  main .about_us .row .col_small{
+    width:33%;
+  }
+
+  main .demo_downl .row .col_standard{
+    width: calc(100% /3);
+  }
+  
+  main .benefit .row .col_standard{
+    width: calc(100% /2);
+  }
+
+
+}
