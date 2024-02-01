@@ -240,6 +240,37 @@ MEDIA QUERY
   main .benefit .row .col_standard{
     width: calc(100% /2);
   }
-
-
 }
+
+
+/* Risoluzione desktop */
+@media screen and (min-width:1200px){
+  .container{
+    max-width: 1200px;
+    width: 80%;
+  }
+
+  main .strategic_planning .row{
+    display: flex;
+  }
+
+  main .strategic_planning .row .col_big{
+    width: 60%;
+  }
+
+  main .strategic_planning .row .col_small{
+    width: 40%;
+  }
+
+  main .benefit .row .col_standard{
+    width: calc(100% /3);
+  }
+}
+
+
+/* Per evitare che la pagina si allarghi troppo */
+@media screen and (min-width:1000px) and (max-width:1199px) {
+  .container{
+      width: 90%;
+  }   
+} 
