@@ -22,9 +22,9 @@ body{
 
 /* UTILITY */
 
-.debug{
+/* .debug{
   border: 1px solid red;
-}
+} */
 
 .d_flex{
   display: flex;
@@ -44,7 +44,7 @@ body{
 .card{
   border-radius: 20px;
   height: 100%;
-  padding: 30px;
+  padding: 30px 30px 0;
 }
 
 .card_white{
@@ -64,7 +64,7 @@ main .get_started{
 }
 
 img{
-  width: 50%;
+  width: 100%;
 
 }
 
@@ -111,6 +111,10 @@ img{
   padding: 0 30px 15px;
 }
 
+.padd_endcard{
+  padding-bottom: 30px;
+}
+
 .mb_m{
   margin-bottom: 50px;
 }
@@ -129,6 +133,7 @@ img{
   padding: 15px 20px;
   border-radius: 50px;
   text-decoration: none;
+  font-size: .9rem;
 }
 
 .btn:hover{
@@ -167,6 +172,10 @@ img{
   color: var(--second-color);
 }
 
+.btn_more{
+  padding: 10px 50px;
+}
+
 
 .btn i{
   margin-right: 10px;
@@ -177,14 +186,10 @@ img{
   text-align: center;
 }
 
-main .demo_downl h3{
-  color: var(--third-color);
-  font-size: 1.5rem;
+.font_mini{
+  font-size: .9rem;
 }
 
-main .demo_downl p{
-  color: var(--fifth-color);
-}
 
 /* HEADER  */
 header{
@@ -275,10 +280,22 @@ main .demo_downl .icon{
   color: var(--third-color);
 }
 
-/* Strategic_planning */
-main .strategic_planning img{
-  width: 100%;
+main .demo_downl h3{
+  color: var(--third-color);
+  font-size: 1.5rem;
 }
+
+main .demo_downl p{
+  color: var(--fifth-color);
+}
+
+main .demo_downl .img img{
+  position: relative;
+  top:4px ;
+}
+
+/* Strategic_planning */
+
 
 main .strategic_planning h1{
   color: var(--second-color);
@@ -305,31 +322,96 @@ main .strategic_planning .btn i{
 
 
 /* Testimonial */
-main .testimonial 
+main .testimonial h2{
+  color: var(--sixth-color);
+  font-size: 2rem;
+}
 
 /* Benefit */
+main .benefit h2{
+  color: var(--second-color);
+  font-size: 1.8rem;
+}
 
+main .benefit .card_white h2{
+  color: var(--sixth-color);
+  font-size: 3rem;
+}
+
+main .benefit .card_white h3{
+  color: var(--sixth-color);
+}
+
+main .benefit .card_white p{
+  color: var(--fifth-color);
+}
 
 /* About_us */
+main .about_us .col_small{
+  max-width: 300px;
+}
+
+main .about_us h2{
+  color: var(--sixth-color);
+  font-size: 1.8rem;
+}
+
+main .about_us p{
+  color: var(--eighth-color);
+}
+
+main .about_us h3{
+  color: var(--sixth-color);
+  font-size: 1.5rem;
+}
+
+main .about_us .img{
+  position: relative;
+}
+
+main .about_us .img .quote{
+  color: var(--sixth-color);
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
 
 
 /* Get_start */
-/* TODO: eliminare altezze fisse */
 main .get_started .container{
   height: 500px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 30px;
 }
 
 main .get_started p:last-child a{
   color: var(--second-color);
 }
 
+main .get_started p:first-child{
+  color: #d5d4f4;
+}
+
+main .get_started h2{
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+
+main .get_started h1{
+  font-size: 3rem;
+  color: var(--seventh-color);
+}
+
+
+
 /* FOOTER */
 footer{
   background-color: var(--eighth-color);
   color: white;
+  font-size: .7rem;
 }
 
 footer .container{
@@ -344,6 +426,7 @@ footer .container .upper,
 footer .container .bottom{
   text-align: center;
 }
+
 
 footer a{
   color: #7875ae;
@@ -373,13 +456,11 @@ MEDIA QUERY
   }
 
 
-  main .demo_downl .row .col_big,
-  main .about_us .row .col_big{
-    width:66.66%;
+  main .demo_downl .row .col_big{
+    width:66%;
   }
 
-  main .demo_downl .row .col_small,
-  main .about_us .row .col_small{
+  main .demo_downl .row .col_small{
     width:33%;
   }
 
@@ -395,17 +476,44 @@ MEDIA QUERY
     font-size: .9rem;
   }
 
-  
-  main .strategic_planning .card img{
-    width: 70%;
+  main .demo_downl .img{
+    width: 50%;
   }
 
   main .testimonial .card_lilac{
     display: flex;
   }
+
+  main .testimonial .img{
+    margin-right: 15px;
+  }
   
   main .benefit .row .col_standard{
     width: calc(100% /2);
+  }
+
+  main .benefit .text_plus,
+  main .about_us .text_plus{
+    font-size: 2.5rem;
+  }
+
+  main .about_us .col_big{
+    width: 60%;
+  }
+  main .about_us .col_small{
+    width: 39%;
+  }
+
+  main .get_started .container{
+    padding: 0 80px;
+  }
+
+  main .get_started h2{
+    font-size: 2rem;
+  }
+
+  main .get_started h1{
+    font-size: 5rem;
   }
 }
 
@@ -432,6 +540,9 @@ MEDIA QUERY
     display: block;
   }
 
+  main .demo_downl .img{
+    width: 100%;
+  }
 
   main .strategic_planning .row{
     display: flex;
@@ -451,6 +562,10 @@ MEDIA QUERY
     width: calc(100% /3);
   }
 
+  main .get_started .container{
+    padding: 0 150px;
+  }
+}
 
 
 /* Per evitare che la pagina si allarghi troppo */
