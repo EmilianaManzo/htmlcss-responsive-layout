@@ -42,7 +42,7 @@ body{
 }
 
 .card{
-  border-radius: 10%;
+  border-radius: 20px;
   height: 100%;
   padding: 30px;
 }
@@ -61,6 +61,11 @@ main .strategic_planning,
 main .benefit,
 main .get_started{
   background-color: var(--sixth-color);
+}
+
+img{
+  width: 50%;
+
 }
 
 
@@ -108,6 +113,13 @@ main .get_started{
 
 .mb_m{
   margin-bottom: 50px;
+}
+
+.brd_rad{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* bottoni */
@@ -160,6 +172,20 @@ main .get_started{
   margin-right: 10px;
 }
 
+/* Text  */
+.text_c{
+  text-align: center;
+}
+
+main .demo_downl h3{
+  color: var(--third-color);
+  font-size: 1.5rem;
+}
+
+main .demo_downl p{
+  color: var(--fifth-color);
+}
+
 /* HEADER  */
 header{
   color: white;
@@ -181,8 +207,8 @@ header .container{
   font-size: 1.5rem;
 }
 
-header .container .logo{
-  font-size: 2rem;
+header .container .logo img{
+  vertical-align: middle;
 }
 
 .container .nav_hamb i:hover{
@@ -240,20 +266,46 @@ main .demo_downl .row{
   width: 100%;
 }
 
-/* TODO: eliminare altezze fisse */
-main .demo_downl .row .col{
-  /* height: 200px; */
-}
-
 main .demo_downl .row .card{
   background-color: var(--fourth-color);
 }
 
+main .demo_downl .icon{
+  font-size: 5rem ;
+  color: var(--third-color);
+}
+
 /* Strategic_planning */
+main .strategic_planning img{
+  width: 100%;
+}
+
+main .strategic_planning h1{
+  color: var(--second-color);
+  font-size: 1.8rem;
+}
+
+main .strategic_planning h3{
+  color: var(--first-color);
+}
+
+main .strategic_planning p{
+  font-size: .8rem;
+  color: var(--second-color);
+}
+
+main .strategic_planning .card_white p{
+  font-style: italic;
+  color: var(--eighth-color);
+}
+
+main .strategic_planning .btn i{
+  margin: 0;
+}
 
 
 /* Testimonial */
-
+main .testimonial 
 
 /* Benefit */
 
@@ -303,6 +355,16 @@ MEDIA QUERY
 /* Risoluzione tablet */
 
 @media screen and (min-width:768px) {
+  .text_l{
+    text-align: left;
+  }
+
+  .flex_tbt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   main .demo_downl .row,
   main .benefit .row,
   main .about_us .row{
@@ -324,6 +386,23 @@ MEDIA QUERY
   main .demo_downl .row .col_standard{
     width: calc(100% /3);
   }
+
+  main .demo_downl h3{
+    font-size: 1.2rem;
+  }
+
+  main .demo_downl p{
+    font-size: .9rem;
+  }
+
+  
+  main .strategic_planning .card img{
+    width: 70%;
+  }
+
+  main .testimonial .card_lilac{
+    display: flex;
+  }
   
   main .benefit .row .col_standard{
     width: calc(100% /2);
@@ -333,6 +412,10 @@ MEDIA QUERY
 
 /* Risoluzione desktop */
 @media screen and (min-width:1200px){
+  .flex{
+    display: flex;
+  }
+
   .container{
     max-width: 1200px;
     width: 80%;
@@ -349,22 +432,25 @@ MEDIA QUERY
     display: block;
   }
 
+
   main .strategic_planning .row{
     display: flex;
   }
 
-  main .strategic_planning .row .col_big{
-    width: 60%;
+  main .strategic_planning .row .col{
+    width: 50%;
+    align-items: end;
   }
 
-  main .strategic_planning .row .col_small{
-    width: 40%;
+  main .strategic_planning .card_white{
+    max-height: 450px;
+    max-width: 300px;
   }
 
   main .benefit .row .col_standard{
     width: calc(100% /3);
   }
-}
+
 
 
 /* Per evitare che la pagina si allarghi troppo */
@@ -372,4 +458,4 @@ MEDIA QUERY
   .container{
       width: 90%;
   }   
-} 
+}
